@@ -3,7 +3,7 @@
 #include <string>
 
 #define DEFAULT_CHUNK_SIZE 134217728 // roughly ~134Mb
-#define DEFAULT_CHUNK_PREFIX "chunk" // example filename oryginal: "example.txt" chunk: "chunk5_example.txt"
+#define DEFAULT_CHUNK_PREFIX "chunk_" // example filename oryginal: "example.txt" chunk: "chunk5_example.txt"
 
 int Split(std::string filename, unsigned int chunkSize);
 int Merge(std::string filename, unsigned int count);
